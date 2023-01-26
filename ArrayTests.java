@@ -2,7 +2,7 @@ import static org.junit.Assert.*;
 import org.junit.*;
 
 public class ArrayTests {
-	/*
+	
   @Test 
 	public void testReverseInPlace() {
     int[] input1 = { 3 };
@@ -23,7 +23,7 @@ public class ArrayTests {
     int[] input2 = {1,2,3};
     assertArrayEquals(new int[]{3,2,1}, ArrayExamples.reversed(input2));
   }
-  */
+  
   @Test
   public void testReverseInPlaceMirror() {
     int[] input = {1,2,1};
@@ -38,5 +38,10 @@ public class ArrayTests {
     assertArrayEquals(new int[] {3,2,1}, input);
   }
 
+  @Test
+  public void testAverageWithoutLowest() {
+    double[] input = {5,1,1};
+    assertEquals(3.0, ArrayExamples.averageWithoutLowest(input), 0.01);
+  }
 
 }
